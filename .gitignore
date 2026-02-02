@@ -1,7 +1,15 @@
-target/
-**/*.o
-**/*.a
-**/*.so
-**/*.dylib
-**/*.dll
-**/*.exe
+# Rust
+/target/
+**/*.rs.bk
+
+# Go
+/bin/
+/pkg/
+/vendor/
+/coverage.out
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
