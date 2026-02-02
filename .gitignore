@@ -1,15 +1,37 @@
-# Rust
-/target/
+# =============================================
+# Rust Projects
+# =============================================
+**/target/
+Cargo.lock
 **/*.rs.bk
+.fingerprint/
+debug/
+release/
+build/
+doc/
+*.pdb
 
-# Go
-/bin/
-/pkg/
-/vendor/
-/coverage.out
+# =============================================
+# Go Projects
+# =============================================
+**/bin/
+**/pkg/
+**/vendor/
+**/coverage.out
 *.exe
 *.dll
 *.so
 *.dylib
 *.test
 *.out
+go.sum
+
+# =============================================
+# IDE & OS
+# =============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
