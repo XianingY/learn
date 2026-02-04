@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package v1;
+
+import "google/api/annotations.proto";
+
+option go_package = "github.com/byzantium/vortex-gate/gen/v1;v1";
+
+service GatewayService {
+  // Echo echoes the request message with a timestamp.
+  rpc Echo(EchoRequest) returns (EchoResponse) {
+    option (google.api.http) = {
+      get: "/v1/echo/{message}"
+    };
+  }
+}
+
+message EchoRequest {
+  string message = 1;
+}
+
+message EchoResponse {
+  string message = 1;
+  string timestamp = 2;
+}
